@@ -1,20 +1,29 @@
-export function analyzeGap(targetKeywords, competitorKeywordsList) {
+export function analyzeGap(targetKeywords, competitorKeywordsList, competitorLabels = []) {
   const targetMap = Object.fromEntries(targetKeywords.map(k => [k.word, k.count]));
 
   const competitorFreq = {};
-  for (const keys of competitorKeywordsList) {
+  competitorKeywordsList.forEach((keys, idx) => {
+    const label = competitorLabels[idx] || `Конкурент ${idx + 1}`;
     for (const { word, count } of keys) {
-      competitorFreq[word] = competitorFreq[word] || { sources: 0, totalCount: 0 };
+      if (!competitorFreq[word]) {
+        competitorFreq[word] = { sources: 0, totalCount: 0, labels: [] };
+      }
       competitorFreq[word].sources += 1;
       competitorFreq[word].totalCount += count;
+      competitorFreq[word].labels.push(label);
     }
-  }
+  });
 
   const missing = Object.entries(competitorFreq)
     .filter(([word]) => !(word in targetMap) && word.length >= 3)
     .sort((a, b) => b[1].sources - a[1].sources || b[1].totalCount - a[1].totalCount)
     .slice(0, 20)
-    .map(([word, info]) => ({ word, sources: info.sources, totalCount: info.totalCount }));
+    .map(([word, info]) => ({
+      word,
+      sources: info.sources,
+      totalCount: info.totalCount,
+      labels: info.labels,
+    }));
 
   const missingWords = new Set(missing.map(m => m.word));
 

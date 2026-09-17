@@ -2,6 +2,7 @@ import { fetchText } from './fetchAndExtract.js';
 import { getEmbedding, cosineSimilarity } from './similarity.js';
 import { extractKeywords } from './keywords.js';
 import { analyzeGap } from './gap.js';
+import { buildRecommendations } from './recommendations.js';
 
 function getVerdict(matrix, targetLabel) {
   const rows = matrix.filter(m => m.from === targetLabel || m.to === targetLabel);
@@ -67,15 +68,24 @@ export async function runAnalysis({ query, target, competitors }) {
   const allKeywords = texts.map(t => extractKeywords(t));
   const targetKeywords = allKeywords[0];
   const competitorKeywordsList = allKeywords.slice(1);
-  const { missing, weak, unique } = analyzeGap(targetKeywords, competitorKeywordsList);
+  const { missing, weak, unique } = analyzeGap(
+    targetKeywords,
+    competitorKeywordsList,
+    labels.slice(1)
+  );
 
   const verdict = getVerdict(matrix, labels[0]);
+  const recommendations = buildRecommendations({
+    gap: { missing, weak, unique },
+    targetLabel: labels[0],
+  });
 
   return {
     query,
     urls,
     labels,
     verdict,
+    recommendations,
     matrix,
     keywords: labels.map((label, i) => ({ label, words: allKeywords[i] })),
     gap: { missing, weak, unique },
