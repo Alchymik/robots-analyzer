@@ -21,7 +21,7 @@ app.post('/api/analyze', async (req, res) => {
   }
 });
 
-const PORT = 3001;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 3001; 
+app.listen(PORT, '0.0.0.0', () => {  
   console.log(`Открой http://localhost:${PORT}`);
 });

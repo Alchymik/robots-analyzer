@@ -1,4 +1,6 @@
-import { pipeline } from '@xenova/transformers';
+import { pipeline, env } from '@xenova/transformers';
+
+env.cacheDir = '/tmp';
 
 let extractor;
 
