@@ -1,0 +1,602 @@
+{
+  "query": "настройка robots.txt для сайта",
+  "urls": [
+    "https://site-analyzer.ru/articles/robots-txt/",
+    "https://habr.com/ru/articles/1018250/",
+    "https://skobeeff.com/blog/gayd-po-robots-txt/",
+    "https://timeweb.cloud/docs/general/nastrojka-fajla-robots-txt"
+  ],
+  "labels": [
+    "Ваша страница",
+    "habr.com",
+    "skobeeff.com",
+    "timeweb.cloud"
+  ],
+  "verdict": {
+    "level": "danger",
+    "title": "Зона исключения",
+    "text": "Среднее сходство с конкурентами — 87.4%. Вы покрываете тот же спрос, что и топ, но ваши отличия точечные. Google, скорее всего, не увидит достаточной причины ранжировать вас выше. Смотрите «Уникальные темы» — стоит усилить именно их.",
+    "avg": 87.4,
+    "max": 90.6
+  },
+  "matrix": [
+    {
+      "from": "Ваша страница",
+      "to": "habr.com",
+      "similarity": 90.6
+    },
+    {
+      "from": "Ваша страница",
+      "to": "skobeeff.com",
+      "similarity": 84
+    },
+    {
+      "from": "Ваша страница",
+      "to": "timeweb.cloud",
+      "similarity": 87.7
+    },
+    {
+      "from": "habr.com",
+      "to": "skobeeff.com",
+      "similarity": 82.9
+    },
+    {
+      "from": "habr.com",
+      "to": "timeweb.cloud",
+      "similarity": 87.4
+    },
+    {
+      "from": "skobeeff.com",
+      "to": "timeweb.cloud",
+      "similarity": 80.2
+    }
+  ],
+  "keywords": [
+    {
+      "label": "Ваша страница",
+      "words": [
+        {
+          "word": "disallow",
+          "count": 63
+        },
+        {
+          "word": "user-agent",
+          "count": 31
+        },
+        {
+          "word": "индексации",
+          "count": 19
+        },
+        {
+          "word": "sitemap",
+          "count": 15
+        },
+        {
+          "word": "allow",
+          "count": 15
+        },
+        {
+          "word": "директивы",
+          "count": 12
+        },
+        {
+          "word": "google",
+          "count": 10
+        },
+        {
+          "word": "яндекса",
+          "count": 9
+        },
+        {
+          "word": "yandex",
+          "count": 8
+        },
+        {
+          "word": "seo",
+          "count": 7
+        },
+        {
+          "word": "googlebot",
+          "count": 7
+        },
+        {
+          "word": "noindex",
+          "count": 7
+        },
+        {
+          "word": "яндекс",
+          "count": 6
+        },
+        {
+          "word": "поисковым",
+          "count": 6
+        },
+        {
+          "word": "директива",
+          "count": 6
+        },
+        {
+          "word": "пример",
+          "count": 6
+        },
+        {
+          "word": "clean-param",
+          "count": 6
+        },
+        {
+          "word": "catalog",
+          "count": 6
+        },
+        {
+          "word": "filter",
+          "count": 6
+        },
+        {
+          "word": "siteanalyzer",
+          "count": 5
+        },
+        {
+          "word": "поисковой",
+          "count": 5
+        },
+        {
+          "word": "crawl-delay",
+          "count": 5
+        },
+        {
+          "word": "настройки",
+          "count": 5
+        },
+        {
+          "word": "forum",
+          "count": 5
+        },
+        {
+          "word": "wp-content",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "label": "habr.com",
+      "words": [
+        {
+          "word": "sitemap",
+          "count": 42
+        },
+        {
+          "word": "url",
+          "count": 39
+        },
+        {
+          "word": "disallow",
+          "count": 24
+        },
+        {
+          "word": "google",
+          "count": 18
+        },
+        {
+          "word": "search",
+          "count": 15
+        },
+        {
+          "word": "video",
+          "count": 11
+        },
+        {
+          "word": "image",
+          "count": 9
+        },
+        {
+          "word": "индексации",
+          "count": 8
+        },
+        {
+          "word": "карта",
+          "count": 8
+        },
+        {
+          "word": "карту",
+          "count": 7
+        },
+        {
+          "word": "seo",
+          "count": 6
+        },
+        {
+          "word": "сайтов",
+          "count": 6
+        },
+        {
+          "word": "контент",
+          "count": 6
+        },
+        {
+          "word": "admin",
+          "count": 6
+        },
+        {
+          "word": "host",
+          "count": 6
+        },
+        {
+          "word": "title",
+          "count": 6
+        },
+        {
+          "word": "googlebot",
+          "count": 5
+        },
+        {
+          "word": "видео",
+          "count": 5
+        },
+        {
+          "word": "css",
+          "count": 5
+        },
+        {
+          "word": "настроить",
+          "count": 4
+        },
+        {
+          "word": "яндекс",
+          "count": 4
+        },
+        {
+          "word": "ошибки",
+          "count": 4
+        },
+        {
+          "word": "yandexbot",
+          "count": 4
+        },
+        {
+          "word": "блокирует",
+          "count": 4
+        },
+        {
+          "word": "allow",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "label": "skobeeff.com",
+      "words": [
+        {
+          "word": "disallow",
+          "count": 118
+        },
+        {
+          "word": "allow",
+          "count": 40
+        },
+        {
+          "word": "url",
+          "count": 26
+        },
+        {
+          "word": "user-agent",
+          "count": 23
+        },
+        {
+          "word": "upload",
+          "count": 16
+        },
+        {
+          "word": "clean-param",
+          "count": 15
+        },
+        {
+          "word": "utm",
+          "count": 15
+        },
+        {
+          "word": "seo",
+          "count": 14
+        },
+        {
+          "word": "bitrix",
+          "count": 14
+        },
+        {
+          "word": "google",
+          "count": 13
+        },
+        {
+          "word": "директива",
+          "count": 13
+        },
+        {
+          "word": "персональных",
+          "count": 12
+        },
+        {
+          "word": "продвижение",
+          "count": 11
+        },
+        {
+          "word": "индексации",
+          "count": 11
+        },
+        {
+          "word": "яндекса",
+          "count": 9
+        },
+        {
+          "word": "sitemap",
+          "count": 9
+        },
+        {
+          "word": "пример",
+          "count": 9
+        },
+        {
+          "word": "директивы",
+          "count": 8
+        },
+        {
+          "word": "search",
+          "count": 8
+        },
+        {
+          "word": "количество",
+          "count": 7
+        },
+        {
+          "word": "правило",
+          "count": 7
+        },
+        {
+          "word": "css",
+          "count": 7
+        },
+        {
+          "word": "seо-продвижение",
+          "count": 7
+        },
+        {
+          "word": "cookie",
+          "count": 7
+        },
+        {
+          "word": "яндекс",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "label": "timeweb.cloud",
+      "words": [
+        {
+          "word": "user-agent",
+          "count": 19
+        },
+        {
+          "word": "disallow",
+          "count": 16
+        },
+        {
+          "word": "catalog",
+          "count": 16
+        },
+        {
+          "word": "директивы",
+          "count": 12
+        },
+        {
+          "word": "allow",
+          "count": 8
+        },
+        {
+          "word": "доступ",
+          "count": 6
+        },
+        {
+          "word": "правило",
+          "count": 6
+        },
+        {
+          "word": "яндекса",
+          "count": 6
+        },
+        {
+          "word": "запретить",
+          "count": 5
+        },
+        {
+          "word": "yandex",
+          "count": 5
+        },
+        {
+          "word": "директива",
+          "count": 5
+        },
+        {
+          "word": "значение",
+          "count": 4
+        },
+        {
+          "word": "примечания",
+          "count": 4
+        },
+        {
+          "word": "host",
+          "count": 4
+        },
+        {
+          "word": "crawl-delay",
+          "count": 4
+        },
+        {
+          "word": "указывать",
+          "count": 4
+        },
+        {
+          "word": "нагрузку",
+          "count": 3
+        },
+        {
+          "word": "директив",
+          "count": 3
+        },
+        {
+          "word": "имя",
+          "count": 3
+        },
+        {
+          "word": "указывается",
+          "count": 3
+        },
+        {
+          "word": "запись",
+          "count": 3
+        },
+        {
+          "word": "применено",
+          "count": 3
+        },
+        {
+          "word": "всем",
+          "count": 3
+        },
+        {
+          "word": "одна",
+          "count": 3
+        },
+        {
+          "word": "ботов",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "gap": {
+    "missing": [
+      {
+        "word": "url",
+        "sources": 2,
+        "totalCount": 65
+      },
+      {
+        "word": "search",
+        "sources": 2,
+        "totalCount": 23
+      },
+      {
+        "word": "правило",
+        "sources": 2,
+        "totalCount": 13
+      },
+      {
+        "word": "css",
+        "sources": 2,
+        "totalCount": 12
+      },
+      {
+        "word": "host",
+        "sources": 2,
+        "totalCount": 10
+      },
+      {
+        "word": "upload",
+        "sources": 1,
+        "totalCount": 16
+      },
+      {
+        "word": "utm",
+        "sources": 1,
+        "totalCount": 15
+      },
+      {
+        "word": "bitrix",
+        "sources": 1,
+        "totalCount": 14
+      },
+      {
+        "word": "персональных",
+        "sources": 1,
+        "totalCount": 12
+      },
+      {
+        "word": "video",
+        "sources": 1,
+        "totalCount": 11
+      },
+      {
+        "word": "продвижение",
+        "sources": 1,
+        "totalCount": 11
+      },
+      {
+        "word": "image",
+        "sources": 1,
+        "totalCount": 9
+      },
+      {
+        "word": "карта",
+        "sources": 1,
+        "totalCount": 8
+      },
+      {
+        "word": "карту",
+        "sources": 1,
+        "totalCount": 7
+      },
+      {
+        "word": "количество",
+        "sources": 1,
+        "totalCount": 7
+      },
+      {
+        "word": "seо-продвижение",
+        "sources": 1,
+        "totalCount": 7
+      },
+      {
+        "word": "cookie",
+        "sources": 1,
+        "totalCount": 7
+      },
+      {
+        "word": "сайтов",
+        "sources": 1,
+        "totalCount": 6
+      },
+      {
+        "word": "контент",
+        "sources": 1,
+        "totalCount": 6
+      },
+      {
+        "word": "admin",
+        "sources": 1,
+        "totalCount": 6
+      }
+    ],
+    "weak": [
+      {
+        "word": "catalog",
+        "mine": 6,
+        "avgCompetitor": 16
+      },
+      {
+        "word": "clean-param",
+        "mine": 6,
+        "avgCompetitor": 15
+      }
+    ],
+    "unique": [
+      "noindex",
+      "поисковым",
+      "filter",
+      "siteanalyzer",
+      "поисковой",
+      "настройки",
+      "forum",
+      "wp-content"
+    ]
+  }
+}
